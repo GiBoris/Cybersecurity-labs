@@ -53,7 +53,7 @@ The objectives of this lab were to:
 - Confirmed correct sourcetypes and indexing
 - Prepared data for further investigation
 
-
+![Dataset Ingestion](./images/2.png)
 
 ---
 
@@ -69,7 +69,7 @@ Performed exploratory analysis to understand event volume and structure.
 
 Saved search results as a **dashboard**.
 
-
+![Initial Data Analysis](./images/3.png)
 
 ---
 
@@ -83,7 +83,7 @@ Saved search results as a **dashboard**.
   - Domain names
 - Created searchable fields for analysis
 
-
+![Parsing](./images/4.1.png)
 
 ---
 
@@ -92,6 +92,8 @@ Saved search results as a **dashboard**.
 - Used `top limit=20` to identify the most frequently queried domains
 - Focused analysis on high-frequency and anomalous domains
 
+![Frequency](./images/4.2.png)
+
 ---
 
 #### 4.3 Suspicious Domain Identification
@@ -99,6 +101,17 @@ Saved search results as a **dashboard**.
 - Analysed domain frequency results
 - Identified a **suspicious domain**
 - Investigated the **associated IP address**
+
+![Suspiccious Domain](./images/4.3.png)
+
+---
+
+## 5. Alert Creation (Splunk Enterprise)
+
+In this step I an alert **Splunk alert** to inform Splunk Administrator when specific user creates a process in Windows before the working day starts.
+
+![Alert](./images/5.png)
+
 
 ---
 
