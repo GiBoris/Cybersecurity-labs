@@ -53,18 +53,20 @@ This lab demonstrates the ability to:
 - Verified Splunk service status;
 - Confirmed access to Splunk Web interface.
 
-![Splunk installation](Images/lab01-01-splunk-install.png)
-
 ---
 
 ### 2. Data Upload (BOTSv3 Dataset)
 - Uploaded BOTSv3 dataset into Splunk;
 - Confirmed events were indexed and searchable.
 
+![Data Upload](Images/2.png)
+
 ---
 
 ### 3. SPL Fundamentals & Initial Analysis
 - Used basic SPL commands (stats, sort, head) to perform an initial analysis of data
+
+![SPL](Images/3.png)
 
 ---
 
@@ -78,15 +80,18 @@ Extracted meaningful fields from DNS logs to support investigations:
 - Destination port;
 - Queried domain.
 
+![Field Extraction](Images/4.1.png)
 
 ### 4.2 Top Queried Domains
 Identified 20 most frequently queried domains.
 
+![Domains](Images/4.2.png)
 
 ### 4.3 Suspicious Domain Investigation
 - Identified suspicious domain based on frequency and naming pattern;
 - Pivoted from domain to associated IP addresses.
 
+![Investigation](Images/4.3.png)
 
 ### 5. Alert Creation (Processes Executed Before 8AM)
 Created an alert to detect processes launched outside normal business hours.
@@ -94,10 +99,12 @@ Created an alert to detect processes launched outside normal business hours.
 - Defined trigger conditions;
 - Verified alert logic using historical data.
 
+![Alert](Images/5.png)
 
 ### 6. Reporting & Dashboard
 Built reports and dashboards to monitor VPN activity and authentication results.
 
+![Dashboard](Images/6.png)
 
 ### Key Skills Demonstrated
 - SIEM fundamentals (Splunk);
@@ -110,7 +117,7 @@ Built reports and dashboards to monitor VPN activity and authentication results.
 
 ---
 
-###Disclaimer
+Disclaimer
 
 All systems and data used in this lab are non-production, isolated, and for educational purposes only.
 No real user data or sensitive information was used.
