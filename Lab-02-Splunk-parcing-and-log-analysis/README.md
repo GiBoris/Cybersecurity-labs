@@ -50,7 +50,7 @@ This lab demonstrates the ability to:
 
 This issue prevented proper analysis and confirmed the need for ingestion-time parsing fixes.
 
-![Incorrect event breaking](Images/lab02-01-broken-events.png)
+![Incorrect event breaking](Images/1.png)
 
 ---
 
@@ -60,8 +60,8 @@ This issue prevented proper analysis and confirmed the need for ingestion-time p
 
 Correct event breaking is critical for accurate timestamping, searching, and investigation.
 
-![props.conf configuration](Images/lab02-02-props-conf.png)
-![props.conf configuration](Images/lab02-02-props-conf.png)
+![props.conf](Images/2.1.png)
+![props.conf](Images/2.2.png)
 
 ---
 
@@ -69,7 +69,7 @@ Correct event breaking is critical for accurate timestamping, searching, and inv
 - Created a regular expression-based extraction in `transforms.conf` to extract key fields required for analysis, such as user identifiers, IP addresses, and domains;
 - Prepared Splunk to extract structured fields from raw log events.
 
-![transforms.conf configuration](Images/lab02-03-transforms-conf.png)
+![transforms.conf](Images/3.png)
 
 ---
 
@@ -80,7 +80,7 @@ Correct event breaking is critical for accurate timestamping, searching, and inv
 
 After this update, Splunk was able to correctly process and enrich incoming events.
 
-![Updated props.conf](Images/lab02-04-fixed-events.png)
+![Updated props.conf](Images/4.png)
 
 ---
 
@@ -89,7 +89,7 @@ After this update, Splunk was able to correctly process and enrich incoming even
 - Ensured fields were available for searching and reporting;
 - Applied best practices to avoid unnecessary index-time overhead.
 
-![fields.conf configuration](Images/lab02-05-fields-extracted.png)
+![fields.conf configuration](Images/5.png)
 
 ---
 
@@ -99,7 +99,7 @@ After this update, Splunk was able to correctly process and enrich incoming even
 
 This validation confirmed that parsing issues had been fully resolved.
 
-![Extracted fields validation](Images/lab02-06-additional-fields.png)
+![Extracted fields validation](Images/6.png)
 
 ---
 
@@ -108,8 +108,8 @@ This validation confirmed that parsing issues had been fully resolved.
 - Performed research based on log contents;
 - Answered all investigation questions provided by the lab.
 
-![Extracted fields validation](Images/lab02-06-additional-fields.png)
-![Extracted fields validation](Images/lab02-06-additional-fields.png)
+![Extracted fields validation](Images/7.png)
+![Extracted fields validation](Images/8.png)
 
 ---
 
