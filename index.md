@@ -3,30 +3,28 @@ layout: default
 title: Cybersecurity Labs
 ---
 
-# Cybersecurity Labs 🧠🔎
+# Cybersecurity Labs 🛡️
 
-This site is my hands-on portfolio for entry-level **SOC / Cybersecurity Analyst** roles.  
-Each lab is documented with clear steps and supporting evidence (screenshots).
+Hands-on cybersecurity labs supporting my transition into **SOC / Cybersecurity Analyst (Entry Level)** roles.
+
+Each lab documents practical, real-world scenarios with clear steps and supporting evidence.
 
 ---
 
 ## Labs
 
-### ✅ Lab 01 — Splunk Fundamentals
-**Focus:** Splunk setup, data onboarding, SPL basics, dashboards, alerting.  
-➡️ **[Open lab page](Lab-01-Splunk-Fundamentals/)**  
-➡️ **[Open full documentation (README)](Lab-01-Splunk-Fundamentals/README.md)**
+### Lab 01 — Splunk Fundamentals
+[View Lab →](./Lab-01-Splunk-Fundamentals/)
 
 ---
 
-### ✅ Lab 02 — Splunk Parsing & Log Analysis (TryHackMe – FixIt)
-**Focus:** Fix incorrect event breaking, field extraction, validation, log-based investigation.  
-➡️ **[Open lab page](Lab-02-Splunk-parcing-and-log-analysis/)**  
-➡️ **[Open full documentation (README)](Lab-02-Splunk-parcing-and-log-analysis/README.md)**
+### Lab 02 — Splunk Parsing & Log Analysis (TryHackMe – FixIt)
+[View Lab →](./Lab-02-Splunk-parcing-and-log-analysis/)
 
 ---
 
 ## What this portfolio demonstrates
+
 - SIEM fundamentals (Splunk)
 - Log ingestion and parsing troubleshooting
 - Evidence-based documentation
@@ -35,4 +33,7 @@ Each lab is documented with clear steps and supporting evidence (screenshots).
 ---
 
 ## Disclaimer
-All labs are performed in **non-production**, **isolated** environments using **simulated data**.
+
+All labs are performed in **non-production**, **isolated environments** using **simulated data**.
+
+
