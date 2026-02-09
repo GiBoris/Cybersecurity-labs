@@ -70,7 +70,6 @@ This lab demonstrates the ability to:
 
 ### 4. DNS Log Analysis & Field Extraction
 
----
 
 ### 4.1 Field Extraction
 Extracted meaningful fields from DNS logs to support investigations:
@@ -79,18 +78,15 @@ Extracted meaningful fields from DNS logs to support investigations:
 - Destination port;
 - Queried domain.
 
----
 
 ### 4.2 Top Queried Domains
 Identified 20 most frequently queried domains.
 
----
 
 ### 4.3 Suspicious Domain Investigation
 - Identified suspicious domain based on frequency and naming pattern;
 - Pivoted from domain to associated IP addresses.
 
----
 
 ### 5. Alert Creation (Processes Executed Before 8AM)
 Created an alert to detect processes launched outside normal business hours.
@@ -98,12 +94,10 @@ Created an alert to detect processes launched outside normal business hours.
 - Defined trigger conditions;
 - Verified alert logic using historical data.
 
----
 
 ### 6. Reporting & Dashboard
 Built reports and dashboards to monitor VPN activity and authentication results.
 
----
 
 ### Key Skills Demonstrated
 - SIEM fundamentals (Splunk);
