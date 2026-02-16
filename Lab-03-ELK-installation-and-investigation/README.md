@@ -1,3 +1,8 @@
+---
+layout: default
+title: Lab 03 — ELK Installation & Investigation
+---
+
 # Lab 03 — ELK Installation & Web Attack Investigation 🧠🔎
 
 **Platform:** TryHackMe  
