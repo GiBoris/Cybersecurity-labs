@@ -23,6 +23,11 @@ Each lab documents practical, real-world scenarios with clear steps and supporti
 
 ---
 
+### Lab 03 — ELK Installation & Investigation
+[View Lab →](./Lab-03-ELK-installation-and-investigation/)
+
+---
+
 ## What this portfolio demonstrates
 
 - SIEM fundamentals (Splunk)
@@ -35,5 +40,6 @@ Each lab documents practical, real-world scenarios with clear steps and supporti
 ## Disclaimer
 
 All labs are performed in **non-production**, **isolated environments** using **simulated data**.
+
 
 
