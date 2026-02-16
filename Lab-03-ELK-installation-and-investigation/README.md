@@ -11,7 +11,6 @@
 This lab demonstrates the ability to:
 
 - deploy and configure a full ELK stack (Elasticsearch, Logstash, Kibana);
-- ingest and visualize web server logs;
 - investigate malicious activity through log analysis;
 - identify attacker behaviour and post-exploitation actions.
 
@@ -35,7 +34,7 @@ All work performed in an isolated lab environment using simulated data.
 ### 1. Elasticsearch Installation
 Installed Elasticsearch and verified service availability.
 
-📸 Evidence: `Images/01_elasticsearch_installed.png`
+📸 Evidence: `Images/1.1`
 
 ---
 
