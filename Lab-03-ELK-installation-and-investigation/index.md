@@ -13,7 +13,6 @@ This lab demonstrates deployment of the ELK Stack and investigation of a comprom
 
 **Focus Areas**
 - ELK deployment and configuration
-- Log ingestion and visualization
 - Web attack investigation
 - Post-exploitation analysis
 
@@ -40,3 +39,4 @@ This lab demonstrates deployment of the ELK Stack and investigation of a comprom
 - Apache logs
 - Elasticsearch + Logstash + Kibana
 - Simulated attacker dataset
+
