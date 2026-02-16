@@ -20,7 +20,7 @@ This lab demonstrates deployment of the ELK Stack and investigation of a comprom
 
 ## Full Documentation
 
-➡️ [Open Full Lab Documentation](README.md)
+➡️ [Open Full Lab Documentation]
 
 ---
 
@@ -39,4 +39,5 @@ This lab demonstrates deployment of the ELK Stack and investigation of a comprom
 - Apache logs
 - Elasticsearch + Logstash + Kibana
 - Simulated attacker dataset
+
 
