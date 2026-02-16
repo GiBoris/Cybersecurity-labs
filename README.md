@@ -12,8 +12,6 @@ Portfolio repository containing hands-on cybersecurity labs focused on SOC / Cyb
 - Fix broken event parsing, field extraction, validation, investigation workflow  
 ➡️ [Open Lab 02](Lab-02-Splunk-parcing-and-log-analysis/)
 
----
-
 ### Lab 03 — ELK deployment + full incident investigation
 - Install ELK on Lunux machine and investigate web server attack  
 ➡️ [Open Lab 03](Lab-03-ELK-installation-and-investigation/)
