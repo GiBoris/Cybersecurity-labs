@@ -24,7 +24,7 @@ Portfolio repository containing hands-on cybersecurity labs focused on SOC / Cyb
 - Execution chain reconstruction and persistence detection
 - Lateral movement and privilege escalation tracking
 - Ransomware impact assessment
-  ➡️ [Open Lab 04](Lab-04-Intrusion-investigation-in-ELK/)
+➡️ [Open Lab 04](Lab-04-Intrusion-investigation-in-ELK/)
 
 ## Notes
 - Each lab contains its own `README.md` (full documentation) and `index.md` (web landing page).
