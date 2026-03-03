@@ -17,6 +17,17 @@ Portfolio repository containing hands-on cybersecurity labs focused on SOC / Cyb
 ➡️ [Open Lab 03](Lab-03-ELK-installation-and-investigation/)
 
 
+### Lab 04 — Intrusion Investigation in ELK (TryHackMe — Hunt Me II)
+
+- Full-scale intrusion investigation in ELK (Kibana)
+- Typosquatting initial access analysis
+- Execution chain reconstruction and persistence detection
+- LSASS credential dumping and hash extraction
+- Lateral movement and privilege escalation tracking
+- Ransomware impact assessment
+
+➡️ [Open Lab 04](Lab-04-Intrusion-investigation-in-ELK/)
+
 ## Notes
 - Each lab contains its own `README.md` (full documentation) and `index.md` (web landing page).
 - Screenshots are stored in `Images/` inside each lab folder.
