@@ -28,9 +28,14 @@ Each lab documents practical, real-world scenarios with clear steps and supporti
 
 ---
 
+### Lab 04 — Intrusion Investigation in ELK (TryHackMe — Hunt Me II)
+[View Lab →](./Lab-04-Intrusion-investigation-in-ELK/)
+
+---
+
 ## What this portfolio demonstrates
 
-- SIEM fundamentals (Splunk)
+- SIEM fundamentals (Splunk, ELK)
 - Log ingestion and parsing troubleshooting
 - Evidence-based documentation
 - Investigation workflows relevant to SOC operations
@@ -40,6 +45,7 @@ Each lab documents practical, real-world scenarios with clear steps and supporti
 ## Disclaimer
 
 All labs are performed in **non-production**, **isolated environments** using **simulated data**.
+
 
 
 
