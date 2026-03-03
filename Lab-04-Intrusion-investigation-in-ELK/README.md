@@ -55,7 +55,7 @@ Use the placeholders below and rename files to match your actual screenshots.
 
 Used the typosquatting keyword from the scenario (`7zipp`) to pivot to web/network events related to the download. Then validated the URL by correlating the download event with surrounding records (same host, close timestamps).
 
-![1](Images/1.1.png)
+![1](Images/1.png)
 
 ---
 
@@ -63,8 +63,7 @@ Used the typosquatting keyword from the scenario (`7zipp`) to pivot to web/netwo
 
 Starting from the malicious download event (Q1), inspected correlated fields (destination host/IP) and used “View surrounding documents” to confirm the same remote endpoint is consistently associated with the download.
 
-**Evidence:** `Images/Q2_malware_domain_ip.png`  
-**Answer:** `<paste IP here>`
+![2](Images/2.png)
 
 ---
 
@@ -73,7 +72,7 @@ Starting from the malicious download event (Q1), inspected correlated fields (de
 Pivoted from the download to the execution event by filtering on the same host and narrowing to process start telemetry (process creation). Extracted the PID from the execution event for the malware process.
 
 **Evidence:** `Images/Q3_pid_execution.png`  
-**Answer:** `<paste PID here>`
+
 
 ---
 
@@ -82,7 +81,7 @@ Pivoted from the download to the execution event by filtering on the same host a
 Followed the parent→child chain from Q3 and filtered for subsequent downloads/executions by the same process tree. Captured the suspicious **full command line** from the process creation event that performs remote retrieval + execution.
 
 **Evidence:** `Images/Q4_command_line.png`  
-**Answer:** `<paste full command line here>`
+
 
 ---
 
