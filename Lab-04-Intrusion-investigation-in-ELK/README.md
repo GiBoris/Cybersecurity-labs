@@ -69,10 +69,9 @@ Starting from the malicious download event (Q1), inspected correlated fields (de
 
 ### Q3 (What is the PID of the process that executed the malicious software?):
  
-Pivoted from the download to the execution event by filtering on the same host and narrowing to process start telemetry (process creation). Extracted the PID from the execution event for the malware process.
+Pivoted from the download to the execution event by filtering by the name of a payload and narrowing to process start telemetry (process creation). Extracted the PID from the execution event for the malware process.
 
-**Evidence:** `Images/Q3_pid_execution.png`  
-
+![3](Images/3.png)
 
 ---
 
@@ -80,17 +79,15 @@ Pivoted from the download to the execution event by filtering on the same host a
 
 Followed the parent→child chain from Q3 and filtered for subsequent downloads/executions by the same process tree. Captured the suspicious **full command line** from the process creation event that performs remote retrieval + execution.
 
-**Evidence:** `Images/Q4_command_line.png`  
-
+![4](Images/4.png)
 
 ---
 
 ### Q5 (The newly downloaded script also installed the legitimate version of the application. What is the full file path of the legitimate installer?):
  
-From Q4, pivoted into the script activity and searched for the legitimate installer artifact (e.g., `7zlegit.exe`). Confirmed the exact on-disk path using the file creation / process execution context.
+Used that name of the script to find the path to download 7zlegit.exe which is a legitimate version of 7zip downloaded along with malware.
 
-**Evidence:** `Images/Q5_legit_installer_path.png`  
-**Answer:** `<paste full path here>`
+![5](Images/5.png)
 
 ---
 
@@ -98,8 +95,7 @@ From Q4, pivoted into the script activity and searched for the legitimate instal
   
 Filtered Windows service installation telemetry using **Event ID 4697** (service-based persistence). Extracted the service name from the installation record.
 
-**Evidence:** `Images/Q6_service_name_4697.png`  
-**Answer:** `<paste service name here>`
+![6](Images/6.png)
 
 ---
 
@@ -107,8 +103,7 @@ Filtered Windows service installation telemetry using **Event ID 4697** (service
 
 Correlated the installed service (Q6) with outbound network connections shortly after service start. Filtered for network connection telemetry to the malicious endpoint and extracted the executing user from the associated service/process context.
 
-**Evidence:** `Images/Q7_service_user_c2.png`  
-**Answer:** `<paste username here>`
+![7](Images/7.png) 
 
 ---
 
@@ -116,8 +111,7 @@ Correlated the installed service (Q6) with outbound network connections shortly 
 
 Searched for LSASS-related activity (`lsass`) and then pivoted to subsequent parsing actions by reviewing process creation events around the dump timeframe. Identified the parsing tool by its process name/command line.
 
-**Evidence:** `Images/Q8_lsass_parsing_tool.png`  
-**Answer:** `<paste tool name here>`
+![8](Images/8.png) 
 
 ---
 
@@ -125,8 +119,8 @@ Searched for LSASS-related activity (`lsass`) and then pivoted to subsequent par
 
 Confirmed new authentication activity using **Event ID 4624** after the credential dump timeframe. Then searched for artifacts indicating credential material usage (hash references, password indicators, or tool output references) and extracted the `username:hash` pair.
 
-**Evidence:** `Images/Q9_creds_username_hash.png`  
-**Answer:** `<paste username:hash here>`
+![9](Images/9-1.png) 
+![9](Images/9-2.png) 
 
 ---
 
@@ -134,26 +128,23 @@ Confirmed new authentication activity using **Event ID 4624** after the credenti
 
 Pivoted from the newly used account (Q9) to account-management events (password reset/change). Extracted the password value from the recorded activity (as captured in the lab dataset).
 
-**Evidence:** `Images/Q10_password_reset.png`  
-**Answer:** `<paste password here>`
+![10](Images/10.png) 
 
 ---
 
 ### Q11 (What is the name of the workstation where the new account was used?):
  
-Filtered successful logons (4624) for the new account and identified the associated workstation/hostname field. Confirmed by checking multiple logon events for consistency.
+WKSTN-02 confirmed as a result of research
 
-**Evidence:** `Images/Q11_workstation_used.png`  
-**Answer:** `<paste workstation name here>`
+![11](Images/11.png)  
 
 ---
 
 ### Q12 (After gaining access to the new workstation, a new set of credentials was discovered. What is the username, including its domain, and password of this new account?):
  
-Scoped to the workstation from Q11 and filtered for process execution events indicative of credential discovery. Extracted the credential string (domain\username and password) from the relevant event/log content.
+Used winlog.event_id 1 to filter out process
 
-**Evidence:** `Images/Q12_new_credentials.png`  
-**Answer:** `<paste domain\\username and password here>`
+![12](Images/12.png)  
 
 ---
 
@@ -161,8 +152,7 @@ Scoped to the workstation from Q11 and filtered for process execution events ind
 
 Filtered process creation for PowerShell execution (including script names in command line). Identified the script used for credential dumping (excluding mimikatz) based on the script filename referenced during execution.
 
-**Evidence:** `Images/Q13_powershell_script.png`  
-
+![13](Images/13.png)  
 
 ---
 
@@ -170,8 +160,7 @@ Filtered process creation for PowerShell execution (including script names in co
   
 Using the credential dumping context from Q13, located the output event containing the domain admin credential material and extracted the **AES256** hash value from the recorded output.
 
-**Evidence:** `Images/Q14_aes256_hash.png`  
-
+![14](Images/14.png)  
 
 ---
 
@@ -179,8 +168,13 @@ Using the credential dumping context from Q13, located the output event containi
 
 Identified the ransomware executable name from the dataset (e.g., `bomb.exe`), then filtered for file-modification/creation telemetry associated with encryption activity and counted the total impacted files across all hosts.
 
-**Evidence:** `Images/Q15_encrypted_files_count.png`  
+![15](Images/15.png)  
 
+---
+
+### Correctly answered questions of the lab
+
+![16](Images/16.png)  
 
 ---
 
