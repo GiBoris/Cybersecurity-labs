@@ -22,10 +22,8 @@ Portfolio repository containing hands-on cybersecurity labs focused on SOC / Cyb
 - Full-scale intrusion investigation in ELK (Kibana)
 - Typosquatting initial access analysis
 - Execution chain reconstruction and persistence detection
-- LSASS credential dumping and hash extraction
 - Lateral movement and privilege escalation tracking
 - Ransomware impact assessment
-
 ➡️ [Open Lab 04](Lab-04-Intrusion-investigation-in-ELK/)
 
 ## Notes
